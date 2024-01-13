@@ -155,6 +155,7 @@
   /* flex-wrap: wrap; */
   height: fit-content;
   /* overflow: hidden; */
+  margin: 30px 0px;
   width: 100%;
   /* margin-bottom: 3000px; */
 }
@@ -179,8 +180,7 @@
   /* height: 400px; */
 }
 .imagecover {
-  height: 100%;
-  width: 100%;
+ 
   /* background-color: rgba(0,0,0,0.5); */
   position: absolute;
   display: none;
@@ -213,7 +213,9 @@
 #custombtn {
   background-color: rgb(255, 255, 255 ,0.4);
   border: 1px solid transparent;
-  width: max-content;
+  width: 100px;
+  display: block;
+  font-size: 14px;
   border: 1px solid lightgray;
   padding: 0px 5%;
   margin: 50% 25%;
@@ -242,13 +244,66 @@ td{
   flex: 1;
   text-align: center;
 }
+.card-wrapper3{
+  display: flex;
+}
+.card-wrapper4{
+  display: flex;
+  /* margin-bottom: 500px; */
+}
+.stickynav{
+background-color: white;
+display: flex;
+justify-content: space-between;
+/* position: sticky;
+top: 0; */
+/* margin-bottom: 1000px; */
+}
+.stickyul{
+  display: flex;
+}
+.stickyul li{
+  list-style-type: none;
+  margin: 10px 20px;
+  height: auto;
+  width: auto;
+  background-color:rgb(237, 237, 237) ;
+  border-radius: 30px;
+}
+.stickyul li a{
+text-decoration: none;
+color: black;
+/* font-weight: bold; */
+align-items: center;
+display: flex;
+padding: 5px;
+text-align: justify;
+}
+.stickyul li a i{
+  margin: 3px;
+  font-size: 30px;
+}
 
-
-
-
-
-
-
+.stickyul1 li{
+padding: 15px;
+background-color: transparent;
+list-style-type: none;
+border: 1px solid black;
+border-radius: 30px;
+align-self: center;
+}
+.backtop{
+  width: 100%;
+  height: 100px;
+  background-color: lightgray;
+  position: relative;
+}
+.bodytop{
+  text-align: center;
+  /* align-items: center; */
+  /* position: absolute; */
+  /* margin-top: 50px; */
+}
 
 
 
@@ -269,12 +324,36 @@ width: 205px;
     .card-body a{
       font-size: 10px;
     }
+    .stickyul li{
+      margin: 5px;
+      height:20px;
+    }
+    .stickyul li a{
+      padding: 0px;
+      font-size: 8px;
+      padding: 5px;
+    }
+    .stickyul li a i{
+      font-size: 7px;
+    }
+.stickyul1 li{
+  font-size: 8px;
+  padding: 2px;
+}
+.imagecover{
+  width: 160px;
+  height: 230px;
+}
     
 }
 @media only screen and (max-width: 800px){
     .customcard{
 height: 246px;
 width: 176px;
+    }
+    .imagecover{
+      width: 120px;
+      height: 200px;
     }
     .card-body a{
       display: none;
@@ -312,6 +391,45 @@ width: 176px;
         height: 100px;
         width: 100px;
       } */
+      #custombtn{
+        margin: 0px;
+        font-size: 5px;
+        width: 50px;
+        /* display: none; */
+      }
+      .imagecover i{
+        font-size: 7px;
+      }
+      .imagecover{
+        height: 100px;
+        width: 100px;
+      }
+      .stickyul{
+        padding: 0px;
+      }
+      .stickyul li{
+        margin: 2px;
+        height:15px;
+      }
+      .form-switch{
+        padding: 2.5em;
+      }
+      .stickyul li a{
+        padding: 0px;
+        font-size: 5px;
+        padding: 2px;
+      }
+      .stickyul li a i{
+        font-size: 5px;
+      }
+  .stickyul1 li{
+    font-size: 6px;
+    padding: 2px;
+  }
+    
+      .card-wrapper3{
+        display: none;
+      }
       td{
         font-size: 7px;
       }
